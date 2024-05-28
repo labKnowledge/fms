@@ -14,7 +14,7 @@
     <script> //Initial Fetching data
         var userId = localStorage.getItem("loggedin");
         if (!userId) {
-            window.location = "/login.html"
+            window.location.pathname = "/login.html"
         }
     </script>
 </head>
@@ -270,7 +270,7 @@
         var lgout = document.getElementById("logout");
         lgout.onclick = (ev) => {
             localStorage.removeItem("loggedin");
-            window.location = "/login.html"
+            window.location.pathname = "/login.html"
         }
 
 
