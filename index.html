@@ -8,10 +8,10 @@
     <script> //Initial Fetching data
         var userId = localStorage.getItem("loggedin");
         if (!userId) {
-            window.location.pathname = "/login.html"
+            window.location.href = "login.html"
         } else {
 
-            window.location.pathname = "/account.html"
+            window.location.href = "account.html"
         }
     </script>
 </head>

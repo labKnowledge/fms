@@ -52,7 +52,7 @@
             db.forEach((user) => {
                 if (user.username == usn.value && user.password == pass.value) {
                     localStorage.setItem("loggedin", user.phone)
-                    window.location.pathname = "/account.html"
+                    window.location.href = "account.html"
                 }
 
             })

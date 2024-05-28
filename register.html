@@ -71,7 +71,7 @@
             var convertForSaving = JSON.stringify(intraUser);
             localStorage.setItem("users", convertForSaving);
             localStorage.setItem(pnumb.value, JSON.stringify({ balance: 0, deposit: [], withdraw: [] }));
-            window.location.pathname = "/login.html"
+            window.location.href = "login.html"
         }
 
     </script>
